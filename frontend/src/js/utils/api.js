@@ -91,8 +91,8 @@ export const api = {
 
   getContests(platform = null) {
     const url = platform 
-      ? `/contests?platform=${platform}`
-      : '/contests';
+      ? `/contests/this-month?platform=${platform}`
+      : '/contests/this-month';
     return this.request(url);
   },
 };
